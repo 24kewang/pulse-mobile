@@ -18,6 +18,14 @@ module.exports = {
       version: 'detect'
     }
   },
+  overrides: [
+    {
+      files: ['.eslintrc.js', 'babel.config.js', 'app.config.js'],
+      env: {
+        node: true
+      }
+    }
+  ],
   ignorePatterns: ['node_modules/', 'dist/'],
   rules: {
     'react/react-in-jsx-scope': 'off'
